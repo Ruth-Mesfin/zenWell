@@ -27,15 +27,6 @@ body {
    border-radius: 50px;
    margin-bottom: 40px;
 }
-
-.intro-section {
-   padding: 20px 40px;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   gap: 40px;
-}
-
 .site-title {
    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     font-size: 32px;
@@ -61,7 +52,9 @@ a{
    align-items: center;
    justify-content: space-between;
    gap:0.95rem;
+ 
 }
+
 .nav-link {
     display: inline-block; /* Display inline-block */
     color: #ffffff;
@@ -90,13 +83,85 @@ a{
 .nav-link:active {
     transform: translateY(0);
 }
+/* .hrr{
+    display: flexbox;
+    flex-direction: column;
+    width: 50px;
+}
+.hr{
+color: black;
+width: 110px;
+opacity: 100%;
+} */
+.intro-section {
+   padding: 10px 60px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 20px;
+}
+.intro-container{
+    padding: 20px 20px;
+    margin-bottom: 10px;
 
+}
+
+.intro-text{
+     /* width: 495px;
+     height: 157px; */
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+   font-style: italic;
+   font-size: 2rem;
+   color: black;
+   margin-bottom: 10px;
+}
+.intro-text span{
+display: grid;
+color: #985106;
+}
+.home3{
+    font-family:Inria Serif;
+    width: 723px; height: 382px;
+    font-style: bold;
+    font-size: 24px;
+    margin-top: 21px;
+    color: #321A00;
+}
 
 .img{
     width: 300px;
     height: 400px;
     opacity: 100%;
     border-radius: 50px;
-    
+    margin-bottom: 120px;   
 }
-
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Q{
+    font-size: 32px;
+    border-radius: 12px;
+    color: #AA7777;
+    opacity: 46.7%;
+    box-sizing: border-box;
+    margin: 20px 60px;
+}
+.cta-button{
+    font-size: 22px;
+    border-radius: 12px;
+    color: #AA7777;
+    opacity: 46.7%;
+    box-sizing: border-box;
+    margin: 20px 60px;
+}
+.about-tit{
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-style: italic;
+    text-align: center;
+    color: #985106;
+}
+.head2{
+    text-align: ;
+}
