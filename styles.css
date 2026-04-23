@@ -297,12 +297,6 @@ color: #985106;
     line-height: 1.5;
 }
 
-.highlight-text {
-    background-color: #B3E5FC;
-    padding: 10px 15px;
-    border-radius: 8px;
-    display: inline-block;
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
