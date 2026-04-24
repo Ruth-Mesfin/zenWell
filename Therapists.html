@@ -12,7 +12,12 @@
       <section class="hero-section" style="padding-bottom: 40px;">
           <header class="hero-header">
               <h1 class="site-title">Zenith Wellness</h1>
-              <nav class="main-nav">
+              <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <nav class="main-nav" id="mainNav">
                   <a href="./index.html" class="nav-link">Home</a>
                   <a href="./about.html" class="nav-link">About</a>
                   <a href="./Service.html" class="nav-link">Service</a>
@@ -94,6 +99,30 @@
       <p>&copy; 2024 Zenith Wellness. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mainNav = document.getElementById('mainNav');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      mainNav.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        mainNav.classList.remove('active');
+      });
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!hamburger.contains(e.target) && !mainNav.contains(e.target)) {
+        hamburger.classList.remove('active');
+        mainNav.classList.remove('active');
+      }
+    });
+  </script>
 
     </body>
     </html>
